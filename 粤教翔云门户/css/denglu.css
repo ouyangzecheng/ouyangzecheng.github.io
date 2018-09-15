@@ -1,0 +1,197 @@
+body{
+    background-color: #f9fafc;
+}
+
+input::-webkit-input-placeholder{
+    color: #d7dee3;
+    font-weight: 300;
+}
+input::-moz-placeholder{
+    color: #d7dee3;
+    font-weight: 300;
+}
+input:-moz-placeholder{
+    color: #d7dee3;
+    font-weight: 300;
+}
+input:-ms-input-placeholder{
+    color: #d7dee3;
+    font-weight: 300;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset;
+}
+
+.neiron{
+    margin: 0 auto;
+    height: 972px;
+    width: 100%;
+    background: url("../images/bj.png") no-repeat center top;
+}
+.neiron .neiron-mian{
+    width: 1220px;
+    padding: 0 10px;
+    margin: 0 auto;
+    position: relative;
+}
+.neiron .neiron-mian .denlu-bj{
+    width: 444px;
+    height: 475px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 18px rgba(13,82,69,.14);
+    position: absolute;
+    right: 80px;
+    top: 120px;
+}
+.neiron .neiron-mian .denlu-bj h5{
+    font-size: 36px;
+    color: #40cdbf;
+    text-align: center;
+    line-height: 140px;
+}
+.neiron .neiron-mian .denlu-bj .shuru{
+    padding: 0 40px;
+}
+.neiron .neiron-mian .denlu-bj .shuru .text{
+    position: relative;
+}
+.neiron .neiron-mian .denlu-bj .shuru .text span{
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    font-size: 22px;
+    color: #d7dee3;
+}
+.neiron .neiron-mian .denlu-bj .shuru input{
+    border: 1px solid #fff;
+    border-bottom: 1px solid #cccccc;
+    height: 30px;
+    width: 310px;
+    padding: 15px 0 15px 40px;
+    outline: none;
+    font-size: 18px;
+    color: #555;
+    font-weight: 300;
+    background-color: #fff;
+}
+.neiron .neiron-mian .denlu-bj .shuru input:focus{
+    border-bottom: 1px solid #40cdbf;
+}
+.neiron .neiron-mian .denlu-bj .shuru p{
+    color: #d7dee3;
+    font-size: 14px;
+    margin-top: 8px;
+    margin-left: 4px;
+    display: inline-block;
+}
+.neiron .neiron-mian .denlu-bj .shuru p span{
+    display: block;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #c6cdd2;
+    background-color: #fff;
+    border-radius: 2px;
+    float: left;
+    margin-top: 3px;
+    margin-right: 5px;
+    cursor: pointer;
+    line-height: 12px;
+    text-align: center;
+}
+.neiron .neiron-mian .denlu-bj .shuru p .icon-zhengque{
+    background-color: #45c9bc;
+}
+.neiron .neiron-mian .denlu-bj .shuru p .icon-zhengque:before{
+    margin-left: -2px;
+    color: #fff;
+}
+.neiron .neiron-mian .denlu-bj .shuru .tishi{
+    font-size: 12px;
+    color: #f65e85;
+    float: right;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+.neiron .neiron-mian .denlu-bj .denlu-button{
+    text-align: center;
+    margin-top: 50px;
+}
+.neiron .neiron-mian .denlu-bj .denlu-button span{
+    text-align: center;
+    width: 204px;
+    height: 43px;
+    border-radius: 2px;
+    background-color: #45c9bc;
+    line-height: 43px;
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+}
+.neiron .neiron-mian .denlu-bj .denlu-button p{
+    font-size: 12px;
+    text-align: center;
+    color: #d7dee3;
+    margin-top: 18px;
+    cursor: pointer;
+}
+
+.neiron .neiron-mian .denlu-bj{
+    display: block;
+}
+.neiron .neiron-mian .zhuce-bj{
+    display: none;
+    height: auto;
+    padding-bottom: 35px;
+}
+.neiron .neiron-mian .zhuce-bj .shangchuan{
+    text-align: center;
+    position: relative;
+}
+.neiron .neiron-mian .zhuce-bj .shangchuan .zhuce-touxiang{
+    width: 80px;
+    height: 80px;
+    background-color: #ebebeb;
+    margin: 0 auto;
+    border-radius: 100px;
+    overflow: hidden;
+}
+.neiron .neiron-mian .zhuce-bj .shangchuan .zhuce-touxiang img{
+    width: 80px;
+    height: 80px;
+    border: none;
+}
+.neiron .neiron-mian .zhuce-bj .shangchuan input{
+    width: 60px;
+    position: absolute;
+    bottom: 0;
+    left: 190px;
+    opacity: 0;
+    cursor: pointer;
+}
+.neiron .neiron-mian .zhuce-bj .shangchuan p{
+    font-size: 14px;
+    color: #45c9bc;
+    margin-top: 10px;
+    cursor: pointer;
+    display: inline-block;
+    z-index: 99;
+}
+.neiron .neiron-mian .zhuce-bj .shangchuan p:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>粤教翔云</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/denglu.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <script src="js/denglu.js"></script>
+</head>
+<body>
+<div class="top">
+    <div class="header">
+        <div class="header-left">
+            <div class="logo">
+                <img src="images/index/logo.png" alt="">
+            </div>
+            <div class="nav">
+                <ul id="nav">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="PeiXun.html">培训课程</a></li>
+                    <li><a href="XinKeTan.html">新课堂</a></li>
+                    <li><a href="GonZuoShi.html">工作室</a></li>
+                    <li><a href="javascript:">应用研究</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="iconfont icon-sousuo"></div>
+            <input type="text" placeholder="输入搜索内容">
+            <span id="denglu-an"><a href="DengLu.html">登录</a></span>
+            <div class="touxiang" id="touxiang">
+                <img src="" alt="" onerror="Javascript:this.src='images/gonzuoshi/tou-man.png'">
+                <span></span>
+                <p>退出登录</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="neiron">
+    <div class="neiron-mian">
+        <div class="denlu-bj" id="denglu_bj">
+            <h5>登录</h5>
+            <div class="shuru">
+                <div class="text"><span class="iconfont icon-shouji"></span><input type="text" placeholder="输入手机号" id="name" onkeyup="this.value=this.value.replace(/\s+/g,'')"></div>
+                <div class="text"><span class="iconfont icon-mima"></span><input type="password" name="" id="password" placeholder="输入密码" onkeyup="this.value=this.value.replace(/\s+/g,'')"></div>
+                <p><span class="" id="jizhumima"></span>自动登录</p>
+                <span id="tishi" class="tishi"></span>
+            </div>
+            <div class="denlu-button">
+                <span id="denglu">登录</span>
+                <p id="quzhuce">没有账号？前往注册>></p>
+            </div>
+        </div>
+        <div class="denlu-bj zhuce-bj" id="zhuce_bg">
+            <h5>注册</h5>
+            <div class="shangchuan" id="shangchuan">
+                <div class="zhuce-touxiang"><img src="" alt=""></div>
+                <input type="file" accept="image/jpeg,image/jpg,image/png">
+                <p>选择图片</p>
+            </div>
+            <div class="shuru">
+                <div class="text"><span class="iconfont icon-yonghuming"></span><input type="text" placeholder="输入用户名" id="zhu_name"></div>
+                <div class="text"><span class="iconfont icon-shouji"></span><input type="text" placeholder="输入手机号" id="zhu_phone" onkeyup="this.value=this.value.replace(/\s+/g,'')"></div>
+                <div class="text"><span class="iconfont icon-mima"></span><input type="password" name="" id="zhu_password" placeholder="输入密码" onkeyup="this.value=this.value.replace(/\s+/g,'')"></div>
+                <span id="zhu_tishi" class="tishi"></span>
+            </div>
+            <div class="denlu-button">
+                <span id="zhuce">注册</span>
+                <p id="qudenglu">已有账号？前往登录>></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

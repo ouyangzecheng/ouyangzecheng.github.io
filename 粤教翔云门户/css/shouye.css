@@ -1,0 +1,390 @@
+.banner img{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+.mian{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.mian .zixun{
+    width: 100%;
+    margin-top: 70px;
+    overflow: hidden;
+}
+.mian .zixun .xinwen{
+    width: 360px;
+    float: left;
+    margin-right: 40px;
+}
+.mian .zixun .xinwen img{
+    width: 360px;
+    height: 240px;
+}
+.mian .zixun .xinwen .time{
+    color: #999;
+    font-size: 12px!important;
+    overflow: hidden;
+}
+.mian .zixun .xinwen .time p,
+.mian .zixun .xinwen .time span{
+    float: left;
+    margin-right: 8px;
+    line-height: 30px;
+}
+.mian .zixun .xinwen h6{
+    font-size: 18px;
+    color: #444;
+    font-weight: 400;
+    margin: 5px 0 6px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.mian .zixun .xinwen p{
+    font-size: 14px;
+    color: #999;
+}
+.mian .zixun .xinwen-2{
+    float: left;
+    width: 400px;
+}
+.mian .zixun .xinwen-2 ul{
+    margin-top: 20px;
+}
+.mian .zixun .xinwen-2 ul li{
+    border-top: 1px solid #dfdfdf;
+    line-height: 46px;
+    color: #222;
+    font-size: 14px;
+    width: 400px;
+    overflow: hidden;
+}
+.mian .zixun .xinwen-2 ul li a{
+    width: 350px;
+    float: left;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    line-height: 20px;
+    margin-top: 13px;
+}
+.mian .zixun .xinwen-2 ul li span{
+    font-size: 12px;
+    color: #888;
+    float: right;
+}
+
+.mian .yanjiu{
+    padding: 80px 10px 100px;
+    overflow: hidden;
+}
+.mian .yanjiu .neiron{
+    margin-top: 30px;
+}
+.mian .yanjiu .neiron .zhuanjia{
+    width: 330px;
+    border: 1px solid #d1d1d1;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 6px solid #00b791;
+    float: left;
+    margin-right: 45px;
+}
+.mian .yanjiu .neiron .zhuanjia:nth-last-child(1){
+    margin-right: 0;
+}
+.mian .yanjiu .neiron .zhuanjia:hover{
+    cursor: pointer;
+    box-shadow: 1px 2px 10px rgba(25,42,36,.15);
+}
+.mian .yanjiu .neiron .zhuanjia .touxian{
+    width: 330px;
+    height: 330px;
+}
+.mian .yanjiu .neiron .zhuanjia span{
+    font-size: 14px;
+    color: #ccc;
+}
+.mian .yanjiu .neiron .zhuanjia .zhuanjia-txt .name h6{
+    font-size: 30px;
+    font-weight: 400;
+    color: #444;
+    line-height: 30px;
+    padding-top: 20px;
+}
+.mian .yanjiu .neiron .zhuanjia .zhuanjia-txt .zhuti p:nth-child(1){
+    padding-top: 20px;
+    color: #666;
+}
+.mian .yanjiu .neiron .zhuanjia .zhuanjia-txt .name p,
+.mian .yanjiu .neiron .zhuanjia .zhuanjia-txt .zhuti p:nth-child(3){
+    color: #888;
+}
+
+.kecheng{
+    width: 100%;
+    background-color: #f8fafc;
+}
+.kecheng .mian{
+    padding-top: 50px;
+    padding-bottom: 60px;
+    overflow: hidden;
+    text-align: center;
+}
+.kecheng .neiron{
+    padding-top: 30px;
+    overflow: hidden;
+    padding-bottom: 60px;
+}
+.kecheng .neiron .box{
+    width: 284px;
+    height: 190px;
+    margin-right: 20px;
+    float: left;
+}
+.kecheng .neiron .box:nth-last-child(1){
+    margin-right: 0px;
+}
+.kecheng .mian .genduo{
+    color: #0fb287;
+    font-size: 18px;
+    border: 1px solid #0fb287;
+    border-radius: 4px;
+    padding: 10px 100px;
+}
+
+.mian .shujuchenguo{
+    padding-top: 60px;
+    overflow: hidden;
+}
+.mian .shujuchenguo .shuju{
+    float: left;
+}
+.mian .shujuchenguo .shuju .neiron{
+    background-color: #0fb287;
+    color: #fff;
+    margin-top: 30px;
+    padding: 30px;
+    width: 730px;
+    overflow: hidden;
+}
+.mian .shujuchenguo .shuju .neiron .p-span{
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 18px;
+}
+.mian .shujuchenguo .shuju .neiron .p-span span{
+    font-size: 30px;
+    font-weight: 500;
+    padding-left: 15px;
+}
+.mian .shujuchenguo .shuju .neiron .name{
+    overflow: hidden;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed rgba(255,255,255,.6);
+}
+.mian .shujuchenguo .shuju .neiron .name .left{
+    padding: 20px;
+    float: left;
+    width: 188px;
+}
+.mian .shujuchenguo .shuju .neiron .name .left img{
+    float: left;
+    margin-right: 20px;
+}
+.mian .shujuchenguo .shuju .neiron .name .left p{
+    font-size: 18px;
+    line-height: 32px;
+    float: left;
+}
+.mian .shujuchenguo .shuju .neiron .name .left p:nth-child(3){
+    font-size: 24px;
+}
+.mian .shujuchenguo .shuju .neiron .huan canvas{
+    float: left;
+    margin-top: 30px;
+}
+.mian .shujuchenguo .shuju .neiron .huan .data{
+    float: left;
+    padding: 65px 0px 0px 90px;
+}
+.mian .shujuchenguo .shuju .neiron .huan .data span{
+    width: 12px;
+    height: 12px;
+    border-radius: 10px;
+    float: left;
+    display: inline-block;
+    margin-top: 22px;
+}
+.mian .shujuchenguo .shuju .neiron .huan .data div{
+    overflow: hidden;
+    padding-top: 10px;
+}
+.mian .shujuchenguo .shuju .neiron .huan .data div:nth-child(1) span{
+    background-color: #acff2e;
+}
+.mian .shujuchenguo .shuju .neiron .huan .data div:nth-child(2) span{
+    background-color: #ffd920;
+}
+.mian .shujuchenguo .shuju .neiron .huan .data p{
+    float: left;
+    padding: 15px 30px 0 15px;
+}
+.mian .shujuchenguo .shuju .neiron .huan .data h5{
+    font-size: 30px;
+    float: right;
+}
+.mian .shujuchenguo .dontai{
+    float: left;
+}
+.mian .shujuchenguo .dontai .dontai-box{
+    width: 408px;
+    height: 483px;
+    border: 1px solid #f3f3f3;
+    margin-top: 30px;
+    overflow: hidden;
+    position: relative;
+}
+.mian .shujuchenguo .dontai .dontai-box .xian{
+    width: 300px;
+    height: 100%;
+    border-left: 1px solid #0fb287;
+    float: right;
+}
+.mian .shujuchenguo .dontai .dontai-box .xian .gundon{
+    position: absolute;
+    top: 0;
+}
+.mian .shujuchenguo .dontai .dontai-box .xian .gundon .box{
+    position: absolute;
+    overflow: hidden;
+    left: -85px;
+    padding: 15px 0;
+    width: 380px;
+    top: 0px;
+    height: 65px;
+}
+.mian .shujuchenguo .dontai .dontai-box .xian .box .left{
+    float: left;
+}
+.mian .shujuchenguo .dontai .dontai-box .xian .box .left p{
+    font-size: 14px;
+    color: #888;
+    position: absolute;
+    left: 0;
+    line-height: 64px;
+    width: 62px;
+    direction: rtl;
+}
+.mian .shujuchenguo .dontai .dontai-box .xian .box .left span{
+    width: 10px;
+    height: 10px;
+    border-radius: 30px;
+    background-color: #fff;
+    border: 1px solid #0fb287;
+    position: absolute;
+    left: 59px;
+    margin: 26px 20px;
+}
+.mian .shujuchenguo .dontai .dontai-box .xian .box .left div{
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    left: 105px;
+}
+.mian .shujuchenguo .dontai .dontai-box .xian .box .right{
+    float: right;
+    width: 200px;
+    padding: 5px 0;
+}
+.mian .shujuchenguo .dontai .dontai-box .xian .box .right h6{
+    font-size: 18px;
+    font-weight: 400;
+    color: #444;
+    float: left;
+}
+.mian .shujuchenguo .dontai .dontai-box .xian .box .right span{
+    font-size: 12px;
+    padding: 0px 8px;
+    border: 1px solid #e84971;
+    color: #e84971;
+    border-radius: 40px;
+    margin-left: 8px;
+}
+.mian .shujuchenguo .dontai .dontai-box .xian .box .right p{
+    font-size: 12px;
+    color: #ccc;
+    padding-top: 10px;
+}
+.mian .shujuchenguo .dontai .dontai-box .xian .box .right .xueshen{
+    color: #10a607;
+    border: 1px solid #10a607;
+}
+.mian .chengguo{
+    padding-top: 70px;
+}
+.mian .chengguo .paihang{
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 20px 5px 40px 5px;
+    margin-top: 40px;
+    overflow: hidden;
+}
+.mian .chengguo .paihang .box{
+    width: 394px;
+    text-align: center;
+    float: left;
+}
+.mian .chengguo .paihang .box .paihang-biao{
+    font-size: 20px;
+    color: #444;
+    padding: 20px 0;
+}
+.mian .chengguo .paihang .box .box-han{
+    background-color: #fff;
+    overflow: hidden;
+    height: 76px;
+}
+.mian .chengguo .paihang .box .box-han .text{
+    width: 290px;
+    border-bottom: 1px solid #dfdfdf;
+    overflow: hidden;
+    line-height: 74px;
+    margin: 0 10px;
+    float: right;
+    padding-right: 8px;
+}
+.mian .chengguo .paihang .box .box-han:nth-last-child(1) .text{
+    border: none;
+}
+.mian .chengguo .paihang .box .box-han .text p:nth-child(1){
+    float: left;
+    color: #444;
+}
+.mian .chengguo .paihang .box .box-han .text p:nth-child(2){
+    float: right;
+    color: #999;
+    font-size: 14px;
+}
+.mian .chengguo .paihang .box .box-han .text p:nth-child(2) span{
+    font-size: 18px;
+    color: #444;
+    padding-left: 5px;
+}
+.mian .chengguo .paihang .box .box-han span{
+    height: 74px;
+    line-height: 74px;
+    color: #444;
+}
+.mian .chengguo .paihang .box .box-han span img{
+    margin-top: 16px;
+}
+.mian .chengguo .paihang .box:nth-child(2){
+    margin: 0 4px;
+}
+

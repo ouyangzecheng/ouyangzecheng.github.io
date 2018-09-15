@@ -1,0 +1,178 @@
+body{
+    background-color: #f9fafc;
+}
+
+.neiron{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 70px;
+}
+.wenti .wen-top,
+.fanzhuan .fan-top{
+    overflow: hidden;
+    position: relative;
+}
+.wenti .wen-top ul,
+.fanzhuan .fan-top ul{
+    float: left;
+    overflow: hidden;
+    margin-top: 50px;
+}
+.wenti .wen-top ul li,
+.fanzhuan .fan-top ul li{
+    float: left;
+}
+.wenti .wen-top p,
+.fanzhuan .fan-top p{
+    position: absolute;
+    right: 0;
+    bottom: 4px;
+    font-size: 14px;
+    color: #989898;
+    cursor: pointer;
+}
+.wenti .wen-top p span,
+.fanzhuan .fan-top p span{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-top: 5px;
+    background: url(../images/peixun/1_03.png) no-repeat 3px 6px;
+}
+.wenti .wen-top ul li a,
+.fanzhuan .fan-top ul li a{
+    color: #848484;
+    padding: 4px 20px;
+    border: 1px solid #848484;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 30px;
+    display: inline-block;
+    transition: all 0.5s;
+}
+.wenti .wen-top ul li a:hover,
+.fanzhuan .fan-top ul li a:hover{
+    color: #0fb287;
+    border-color: #00a978;
+}
+.wenti .wen-top ul li:nth-child(2),
+.fanzhuan .fan-top ul li:nth-child(2){
+    margin: 0 30px;
+}
+.wenti .wen-top ul .active a,
+.wenti .wen-top ul .active a:hover,
+.fanzhuan .fan-top ul .active a:hover,
+.fanzhuan .fan-top ul .active a{
+    color: #fff;
+    background-color: #0fb287;
+    border: 1px solid #00a978;
+}
+.wenti .wen-bottom,
+.fanzhuan .fan-bottom{
+    overflow: hidden;
+    padding: 0 5px 30px;
+}
+.wenti .wen-bottom .box,
+.fanzhuan .fan-bottom .box{
+    background-color: #fff;
+    border-radius: 2px;
+    border: 1px solid #f2f2f2;
+    width: 284px;
+    overflow: hidden;
+    float: left;
+    margin-right: 15px;
+    margin-top: 40px;
+    padding-bottom: 22px;
+    transition: all 0.5s;
+}
+.wenti .wen-bottom .box:hover,
+.fanzhuan .fan-bottom .box:hover{
+    transform: scale(1.03);
+}
+.wenti .wen-bottom .box:nth-child(4),
+.fanzhuan .fan-bottom .box:nth-child(4){
+    margin-right: 0;
+}
+.wenti .wen-bottom .box:nth-last-child(1),
+.fanzhuan .fan-bottom .box:nth-last-child(1){
+    margin-right: 0;
+}
+.wenti .wen-bottom .box:hover,
+.fanzhuan .fan-bottom .box:hover{
+    box-shadow: 0px 4px 16px #e1f1f0;
+}
+.wenti .wen-bottom .box img,
+.fanzhuan .fan-bottom .box img{
+    min-width: 284px;
+    height: 189px;
+}
+.wenti .wen-bottom .box h6,
+.fanzhuan .fan-bottom .box h6{
+    font-size: 18px;
+    color: #444;
+    font-weight: 400;
+    padding: 10px 10px 4px 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+.fanzhuan .fan-bottom .box p{
+    font-size: 14px;
+    color: #666;
+    padding: 0 10px;
+    overflow: hidden;
+}
+.fanzhuan .fan-bottom .box p:nth-child(3){
+    height: 40px;
+}
+.fanzhuan .fan-bottom .box .caozuo{
+    padding-top: 20px;
+    overflow: hidden;
+}
+.fanzhuan .fan-bottom .box .caozuo p{
+    float: left;
+    color: #c8c8c8;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0;
+    margin: 0 0 0 14px;
+}
+.neiron .wenti{
+    padding-top: 40px;
+}
+.wenti .wen-bottom .box h6{
+    margin-bottom: 10px;
+}
+.wenti .wen-bottom .box h6 span{
+    color: #e86183;
+    border: 1px solid #e86183;
+    padding: 0px 8px;
+    display: inline-block;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-right: 5px;
+}
+.wenti .wen-bottom .box p{
+    padding: 4px 10px 0;
+    color: #666;
+    font-size: 14px;
+    line-height: 22px;
+    overflow: hidden;
+}
+.wenti .wen-bottom .box p:nth-last-child(1){
+    height: 48px;
+}
+.wenti .wen-bottom .box p span{
+    color: #444;
+}
+
+
+
+
+
+
+
+
+

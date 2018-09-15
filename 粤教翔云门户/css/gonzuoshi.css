@@ -1,0 +1,688 @@
+body{
+    background-color: #f9fafc;
+}
+
+.banben{
+    width: 100%;
+    overflow: hidden;
+}
+.banner .banner-img{
+    background: url("../images/gonzuoshi/banner.png") no-repeat 100% 100%;
+    width: 100%;
+    height: 400px;
+}
+.banner .banner-nav{
+    background-color: #fff;
+    box-shadow: 2px 2px 5px rgba(25,42,36,.1);
+    overflow: hidden;
+}
+.banner .banner-nav ul{
+    width: 1200px;
+    margin: 0 auto;
+}
+.banner .banner-nav ul li{
+    float: left;
+    margin-right: 25px;
+    line-height: 60px;
+}
+.banner .banner-nav ul li a{
+    font-size: 16px;
+    color: #444;
+    padding: 2px 5px;
+    cursor: pointer;
+    position: relative;
+}
+.banner .banner-nav ul li .active{
+    color: #21b187;
+}
+.neiron .left .chengyuan .shijian ul .active:after,
+.neiron .left .chengyuan .shijian ul li:hover:after,
+.banner .banner-nav ul li a:hover:after,
+.banner .banner-nav ul li .active:after{
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 4px;
+    background-color: #21b188;
+    border-radius: 2px;
+    top: 26px;
+    left: 50%;
+    margin-left: -11px;
+}
+.neiron{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 10px 0;
+    overflow: hidden;
+}
+.neiron .left{
+    width: 360px;
+    margin-right: 18px;
+    float: left;
+}
+.neiron .left .jianjie,
+.neiron .left .chengyuan,
+.neiron .left .tonji,
+.neiron .left .fangke{
+    padding: 18px;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #eef1f5;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.neiron .biaoti div:nth-child(1){
+    font-size: 45px;
+    color: #21b188;
+    float: left;
+    margin-right: 8px;
+}
+.neiron .biaoti{
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+.neiron .biaoti h5{
+    float: left;
+    font-size: 24px;
+}
+.neiron .biaoti h5:after{
+    top: 38px;
+    left: 0;
+}
+.neiron .biaoti span{
+    float: right;
+    font-size: 20px;
+    color: #cccccc;
+    line-height: 40px;
+    cursor: pointer;
+}
+.neiron .left .jianjie .geren{
+    overflow: hidden;
+}
+.neiron .left .jianjie .geren div{
+    float: left;
+    width: 89px;
+    height: 89px;
+    margin-right: 16px;
+}
+.neiron .left .jianjie .geren h6{
+    font-size: 22px;
+    color: #444;
+    font-weight: 400;
+    padding-top: 12px;
+}
+.neiron .left .jianjie .geren p{
+    color: #666;
+    padding-top: 6px;
+}
+.neiron .left .jianjie ul{
+    overflow: hidden;
+    padding-top: 25px;
+    margin-left: 20px;
+}
+.neiron .left .jianjie ul li{
+    float: left;
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+}
+.neiron .left .jianjie ul li:nth-child(2){
+    margin: 0 40px;
+    padding: 0 40px;
+    border-left: 1px solid #e4e4e4;
+    border-right: 1px solid #e4e4e4;
+}
+.neiron .left .jianjie ul li span{
+    font-size: 22px;
+    font-weight: 500;
+    color: #666;
+}
+.neiron .left .jianjie a{
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #21b187;
+    border-radius: 4px;
+    margin-top: 40px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.neiron .left .chengyuan .shijian{
+    overflow: hidden;
+    margin-left: 55px;
+    padding-bottom: 30px;
+}
+.neiron .left .chengyuan .shijian ul li{
+    float: left;
+    margin: 0 25px;
+    cursor: pointer;
+    color: #666;
+    position: relative;
+}
+.neiron .left .chengyuan .shijian ul .active{
+    color: #21b187;
+}
+.neiron .left .chengyuan .shijian ul .active:after{
+    top: 24px;
+}
+.neiron .left .chengyuan .paihang{
+
+}
+.neiron .left .tonji ul li span,
+.neiron .left .chengyuan .paihang span{
+    float: left;
+    width: 51px;
+    height: 51px;
+    text-align: center;
+    line-height: 51px;
+}
+.neiron .left .tonji ul li .text p,
+.neiron .left .chengyuan .paihang p{
+    float: left;
+    line-height: 51px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.neiron .left .tonji ul li .text p:nth-child(2),
+.neiron .left .chengyuan .paihang p:nth-child(2){
+    float: right;
+}
+.neiron .left .chengyuan .paihang li{
+    padding-top: 10px;
+    overflow: hidden;
+    color: #666;
+}
+.neiron .left .chengyuan .paihang li:nth-child(1){
+    color: #f2594e;
+}
+.neiron .left .chengyuan .paihang li:nth-child(2){
+    color: #4da5f2;
+}
+.neiron .left .chengyuan .paihang li:nth-child(3){
+    color: #69c270;
+}
+.neiron .left .tonji .biaoti{
+    padding-bottom: 20px;
+}
+.neiron .left .tonji ul li{
+    overflow: hidden;
+    color: #666;
+    border-bottom: 1px solid #eceff0;
+}
+.neiron .left .tonji ul li:nth-last-child(1){
+    border: none;
+}
+.neiron .left .tonji ul li:nth-last-child(3) span{
+    font-size: 22px;
+}
+.neiron .left .tonji ul li span{
+    font-size: 28px;
+    float: left;
+}
+.neiron .left .fangke ul li{
+    float: left;
+    text-align: center;
+    padding: 15px 10px;
+}
+.neiron .left .fangke ul li:nth-child(2),
+.neiron .left .fangke ul li:nth-child(5),
+.neiron .left .fangke ul li:nth-child(8){
+    padding: 15px 50px;
+}
+.neiron .left .fangke ul li div{
+    width: 60px;
+    height: 60px;
+}
+.neiron .left .fangke ul li h6{
+    font-size: 16px;
+    font-weight: 400;
+    color: #444;
+    padding-top: 8px;
+    cursor: pointer;
+}
+.neiron .left .fangke ul li p{
+    font-size: 12px;
+    color: #888;
+}
+.neiron .left .fangke ul{
+    overflow: hidden;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e1e5e8;
+}
+.neiron .left .fangke .fanke-bottom div{
+    width: 50%;
+    height: 50px;
+    text-align: center;
+    float: left;
+    padding-top: 20px;
+}
+.neiron .left .fangke .fanke-bottom div p{
+    font-size: 12px;
+    color: #999;
+}
+.neiron .left .fangke .fanke-bottom div span{
+    font-size: 18px;
+    font-weight: 500;
+    color: #666;
+}
+.neiron .left .fangke .fanke-bottom div:nth-child(1) span{
+    color: #21b187;
+}
+.neiron .right{
+    float: left;
+    width: 68%;
+}
+.neiron .right .right-box1 .box1-left{
+    width: 450px;
+    float: left;
+}
+.neiron .right .right-box6,
+.neiron .right .right-box5,
+.neiron .right .right-box4,
+.neiron .right .right-box3,
+.neiron .right .right-box2,
+.neiron .right .right-box1{
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #eef1f5;
+    padding: 20px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.neiron .right .right-box1 .biaoti h5:after{
+    width: 30px;
+    left: 2px;
+}
+.neiron .right .right-box1 .img{
+    position: relative;
+    width: 450px;
+    height: 178px;
+}
+.neiron .right .right-box1 .img-text{
+    background-color: rgba(0,0,0,.2);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    line-height: 50px;
+}
+.neiron .right .right-box1 .img-text p{
+    float: left;
+    padding: 0 10px;
+}
+.neiron .right .right-box1 .img-text span{
+    font-size: 18px;
+    padding: 0 15px;
+    cursor: pointer;
+    opacity: .7;
+}
+.neiron .right .right-box1 .img-text span:hover{
+    opacity: 1;
+}
+.neiron .right .right-box1 .img-text span:nth-child(1){
+    float: left;
+}
+.neiron .right .right-box1 .img-text span:nth-child(3){
+    float: right;
+}
+.neiron .right .right-box1 .box1-left-text{
+    padding: 16px 0 0 0;
+}
+.neiron .right .right-box1 .box1-left-text h6{
+    font-size: 18px;
+    font-weight: 400;
+    float: left;
+    color: #444;
+}
+.neiron .right .right-box1 .box1-left-text span{
+    font-size: 14px;
+    color: #888;
+    float: right;
+    line-height: 25px;
+}
+.neiron .right .right-box1 .box1-left-text p{
+    float: left;
+    color: #666;
+    font-size: 14px;
+    padding-top: 5px;
+}
+.neiron .right .right-box1 .box1-right{
+    float: right;
+    width: 290px;
+    padding-left: 10px;
+}
+.neiron .right .right-box1 .box1-right ul li span{
+    float: right;
+    font-size: 14px;
+    color: #888;
+}
+.neiron .right .right-box1 .box1-right ul li{
+    font-size: 16px;
+    color: #444;
+    cursor: pointer;
+    line-height: 42px;
+    border-bottom: 1px solid #dfdfdf;
+}
+.neiron .right .right-box2 ul li{
+    float: left;
+    width: 188px;
+    height: 128px;
+    margin-right: 7px;
+    position: relative;
+    cursor: pointer;
+}
+.neiron .right .right-box2 ul li:nth-last-child(1){
+    margin-right: 0;
+}
+.neiron .right .right-box2 ul li p{
+    position: absolute;
+    width: 168px;
+    height: 24px;
+    font-size: 12px;
+    color: #fff;
+    padding: 0 10px;
+    background-color: rgba(5,66,64,.45);
+    left: 0;
+    bottom: 0;
+    line-height: 24px;
+}
+.neiron .right .right-box3 .left{
+    width: 49%;
+    float: left;
+}
+.neiron .right .right-box3 .right .tuwen img,
+.neiron .right .right-box3 .left .tuwen img{
+    width: 147px;
+    height: 92px;
+    float: left;
+}
+.neiron .right .right-box3 .right .tuwen .text,
+.neiron .right .right-box3 .left .tuwen .text{
+    float: left;
+    width: 210px;
+    padding-left: 20px;
+}
+.neiron .right .right-box3 .right .tuwen .text h6,
+.neiron .right .right-box3 .left .tuwen .text h6{
+    font-size: 18px;
+    color: #444;
+    font-weight: 400;
+}
+.neiron .right .right-box3 .right .tuwen .text p,
+.neiron .right .right-box3 .left .tuwen .text p{
+    font-size: 12px;
+    color: #999;
+    padding: 2px 0 10px 0;
+}
+.neiron .right .right-box3 .right .tuwen .text ul li,
+.neiron .right .right-box3 .left .tuwen .text ul li{
+    float: left;
+    margin-right: 32px;
+    font-size: 12px;
+    color: #999;
+}
+.neiron .right .right-box3 .right .tuwen .text ul li span,
+.neiron .right .right-box3 .left .tuwen .text ul li span{
+    margin-right: 5px;
+    vertical-align: bottom;
+    display: inline-block;
+    line-height: 18px;
+}
+.neiron .right .right-box3 .right .tuwen .lie,
+.neiron .right .right-box3 .left .tuwen .lie{
+    padding-top: 15px;
+    overflow: hidden;
+    width: 100%;
+    font-size: 16px;
+    color: #666;
+}
+.neiron .right .right-box3 .right .tuwen .lie li,
+.neiron .right .right-box3 .left .tuwen .lie li{
+    padding-top: 8px;
+    font-weight: 300;
+}
+.neiron .right .right-box3 .left .tuwen .lie li span{
+    float: left;
+    font-size: 12px;
+    color: #2a97ef;
+    display: inline-block;
+    padding: 0px 8px;
+    border: 1px solid #2a97ef;
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-top: 2px;
+    font-weight: 400;
+}
+.neiron .right .right-box3 .right .tuwen .lie li p,
+.neiron .right .right-box3 .left .tuwen .lie li p{
+    float: right;
+}
+.neiron .right .right-box3 .right{
+    float: right;
+    width: 48%;
+}
+.neiron .right .right-box3 .right .tuwen .text{
+    width: 200px;
+}
+.neiron .right .right-box3 .right .tuwen .lie li span{
+    float: right;
+    margin-left: 20px;
+}
+.neiron .right .right-box3 .right .tuwen .text h6{
+    padding-bottom: 10px;
+}
+.neiron .right .right-box4 ul li{
+    position: relative;
+    width: 100%;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.neiron .right .right-box4 ul li p{
+    font-size: 14px;
+    color: #444;
+}
+.neiron .right .right-box4 ul li:nth-child(1){
+    margin-top: 0;
+}
+.neiron .right .right-box4 ul li p:nth-child(4){
+    position: absolute;
+    right: 0;
+    top: 2px;
+    color: #888;
+}
+.neiron .right .right-box4 ul li p:nth-child(3){
+    position: absolute;
+    right: 220px;
+    color: #888;
+    top: 2px;
+}
+.neiron .right .right-box4 ul li p:nth-child(2){
+    position: absolute;
+    right: 300px;
+    color: #18a37b;
+    top: 2px;
+}
+.neiron .right .right-box4 ul li p:nth-child(1){
+    display: inline-block;
+    width: 400px;
+}
+.neiron .right .right-box4 ul li .active{
+    color: #2a97ef!important;
+}
+.neiron .right .right-box5 ul{
+    overflow: hidden;
+}
+.neiron .right .right-box5 ul li{
+    float: left;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.neiron .right .right-box5 ul li:nth-last-child(1){
+    margin-right: 0;
+}
+.neiron .right .right-box5 ul li img{
+    width: 185px;
+    height: 126px;
+}
+.neiron .right .right-box5 ul li h6{
+    color: #666;
+    padding-top: 3px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.neiron .right .right-box5 ul li p{
+    float: left;
+    font-size: 14px;
+    color: #888;
+}
+.neiron .right .right-box5 ul li p:nth-last-child(1){
+    font-size: 12px;
+    padding-left: 10px;
+    line-height: 20px;
+}
+.neiron .right .right-box6 .box6-left{
+    width: 55%;
+    float: left;
+    padding-right: 20px;
+}
+.neiron .right .right-box6 .box6-right{
+    float: right;
+    width: 40%;
+}
+.neiron .right .right-box6 .box6-right ul li{
+    overflow: hidden;
+    border-bottom: 1px solid #eceff0;
+    padding-bottom: 15px;
+    padding-top: 20px;
+}
+.neiron .right .right-box6 .box6-right ul li:nth-child(1){
+    padding-top: 0;
+}
+.neiron .right .right-box6 .box6-right ul li img{
+    float: left;
+    width: 60px;
+    height: 60px;
+}
+.neiron .right .right-box6 .box6-right ul li .text{
+    float: left;
+    width: 230px;
+    padding-left: 15px;
+}
+.neiron .right .right-box6 .box6-right ul li .text h6{
+    float: left;
+    font-size: 20px;
+    color: #444;
+    font-weight: 400;
+}
+.neiron .right .right-box6 .box6-right ul li .text span{
+    float: left;
+    font-size: 14px;
+    color: #888;
+    padding-left: 15px;
+    line-height: 28px;
+}
+.neiron .right .right-box6 .box6-right ul li .text p{
+    padding-top: 30px;
+    font-size: 14px;
+    color: #666;
+}
+
+
+.neiron .right .right-box6 .box6-left .dontai-box{
+    width: auto;
+    height: 483px;
+    border: 1px solid #f3f3f3;
+    overflow: hidden;
+    position: relative;
+}
+.neiron .right .right-box6 .box6-left .dontai-box .xian{
+    width: 300px;
+    height: 100%;
+    border-left: 1px solid #0fb287;
+    float: right;
+}
+.neiron .right .right-box6 .box6-left .dontai-box .xian .gundon{
+    position: absolute;
+    top: 0;
+}
+.neiron .right .right-box6 .box6-left .dontai-box .xian .gundon .box{
+    position: absolute;
+    overflow: hidden;
+    left: -85px;
+    padding: 15px 0;
+    width: 380px;
+    top: 0px;
+    height: 65px;
+}
+.neiron .right .right-box6 .box6-left .dontai-box .xian .box .left{
+    float: left;
+}
+.neiron .right .right-box6 .box6-left .dontai-box .xian .box .left p{
+    font-size: 14px;
+    color: #888;
+    position: absolute;
+    left: 0;
+    line-height: 64px;
+    width: 62px;
+    direction: rtl;
+}
+.neiron .right .right-box6 .box6-left .dontai-box .xian .box .left span{
+    width: 10px;
+    height: 10px;
+    border-radius: 30px;
+    background-color: #fff;
+    border: 1px solid #0fb287;
+    position: absolute;
+    left: 59px;
+    margin: 26px 20px;
+}
+.neiron .right .right-box6 .box6-left .dontai-box .xian .box .left div{
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    left: 105px;
+}
+.neiron .right .right-box6 .box6-left .dontai-box .xian .box .right{
+    float: right;
+    width: 200px;
+    padding: 5px 0;
+}
+.neiron .right .right-box6 .box6-left .dontai-box .xian .box .right h6{
+    font-size: 18px;
+    font-weight: 400;
+    color: #444;
+    float: left;
+}
+.neiron .right .right-box6 .box6-left .dontai-box .xian .box .right span{
+    font-size: 12px;
+    padding: 0px 8px;
+    border: 1px solid #e84971;
+    color: #e84971;
+    border-radius: 40px;
+    margin-left: 8px;
+}
+.neiron .right .right-box6 .box6-left .dontai-box .xian .box .right p{
+    font-size: 12px;
+    color: #ccc;
+    padding-top: 10px;
+}
+.neiron .right .right-box6 .box6-left .dontai-box .xian .box .right .xueshen{
+    color: #10a607;
+    border: 1px solid #10a607;
+}
+
+
+
+
+
+
+
+
+
+
