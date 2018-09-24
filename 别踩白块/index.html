@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>别踩白块</title>
+</head>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.mian{
+		width: 550px;
+		height: 400px;
+		margin: 40px auto;
+	}
+	.box, .white-box{
+		width: 400px;
+		border: 1px solid #666;
+		position: relative;
+		overflow: hidden;
+		float: left;
+		background-color: #f7f7f7;
+	}
+	.box{
+		background-color: rgba(0, 0, 0, 0);
+		border: none;
+	}
+	.white-box{
+		height: 400px;
+	}
+	.right{
+		width: 120px;
+		height: auto;
+		float: right;
+		padding: 50px 0 0 20px;
+	}
+	.right p{
+		font-size: 16px;
+		color: #666;
+	}
+	.right p span{
+		color: #333;
+		font-size: 18px;
+		font-weight: 500;
+	}
+	.block, .white{
+		width: 98px;
+		height: 98px;
+		background-color: #279eef;
+		position: absolute;
+		top: -100px;
+		left: 0px;
+		border: 1px solid #188cdb;
+		border-radius: 4px;
+		box-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+		opacity: 1;
+	}
+	.white{
+		background-color: #fff;
+		border: 1px solid #f7f7f7;
+		box-shadow: 0 1px 1px rgba(0, 0, 0, .1)
+	}
+	.right button{
+		width: 80px;
+		height: 30px;
+		margin-top: 20px;
+		border-radius: 2px;
+		outline: none;
+		border: 1px solid #188cdb;
+		background-color: #279eef;
+		color: #fff;
+		cursor: pointer;
+	}
+	.right button:active{
+		background-color: #188cdb;
+	}
+	.white-box{
+		position: absolute;
+	}
+	.txt{
+		color: #333;
+		text-align: center;
+		margin: 30px 0 30px 0;
+	}
+	.txt h5{
+		font-size: 26px;
+		margin-bottom: 8px;
+		color: #279eef;
+	}
+</style>
+<body>
+	<div class="mian">
+		<div class="txt">
+			<h5>别踩白块</h5>
+			<p>游戏说明：蓝块到底游戏结束，点到白块游戏结束！</p>
+		</div>
+		<div class="white-box" id="white_box"></div>
+		<div class="box" id="box"></div>
+		<div class="right">
+			<p>当前得分:<span id="fenshu">0</span></p>
+			<button id="kaishi">开始游戏</button>
+			<button id="stop">暂停</button>
+		</div>
+	</div>	
+</body>
+<script src="move.js"></script>
+<script>
+
+	var FenShu = 0;
+	var Time = 1000;
+
+	//随机生成块的位置
+	function BlockLeft(){
+		var arr = [0, 100, 200, 300];
+		var i = Math.floor(Math.random()*arr.length);
+
+		return arr[i];
+	}
+	
+	//创建蓝块
+	function newBlock(Left){
+		var box = document.getElementById("box");
+		var block = document.createElement("div");
+
+		block.style.left= Left + "px";
+		block.className = "block";
+		box.appendChild(block);
+	}
+
+	//创建白块
+	function whiteBlock(){
+		var box = document.getElementById("white_box");
+		var white = document.getElementsByClassName("white");
+		var arr = [0, 100, 200, 300];
+
+		if(white.length != 4*4){
+			for(var i=0; i<arr.length; i++){
+				var white = document.createElement("div");
+
+				white.style.left = arr[i] + "px";
+				white.className = "white";
+				box.appendChild(white);
+			}
+		}else{
+			white[0].index = true;
+		}
+	}
+
+	//块运动
+	// clearInterval(timer)
+	// var timer = setInterval(function(){
+	// 	newBlock(BlockLeft());
+
+	// 	var box =document.getElementById("box");
+	// 	var block = document.getElementsByClassName("block");
+	// 	for(var i=0;i<block.length;i++){
+	// 		block[i].style.top = block[i].offsetTop + 100 + "px";
+
+	// 		if(block[i].offsetTop >= 400){
+	// 			clearInterval(timer)
+				
+	// 		}	
+	// 	}
+	// 	clickBlock();
+	// },Time-FenShu*2);
+
+	//块运动
+	var abc;
+	var timer = function(){
+		clearTimeout(abc)
+		var box = document.getElementById("box");
+		var whiteBox = document.getElementById("white_box");
+		var block = document.getElementsByClassName("block");
+		var Stop = document.getElementById("stop");
+		var white = document.getElementsByClassName("white");
+
+		if(Stop.index || Stop.index3){
+			return;
+		}
+
+		whiteBlock(BlockLeft())
+		newBlock(BlockLeft())
+
+		for(var i=0;i < block.length;i++){
+			// block[i].style.top = block[i].offsetTop + 100 + "px";
+			// var Top =block[i].offsetTop + 100;
+			startMove(block[i], {top: block[i].offsetTop + 100})
+
+			if(block[i].offsetTop >= 400){
+				clearTimeout(abc)
+				// block[i].style.top = block[i].offsetTop - 100 + "px";
+				Stop.index = false;
+				Stop.index2 = true;
+				confirm("蓝块到底，游戏结束!分数为：" + FenShu + "分!")
+				return;
+			}	
+		}
+
+		if(white[0].index != true){
+			for(var i=0;i<white.length;i++){
+				// white[i].style.top = white[i].offsetTop + 100 + "px";
+				startMove(white[i], {top: white[i].offsetTop + 100})
+				// console.log(white[i].offsetTop)
+
+				// if(white[i].offsetTop >= 400){
+				// 	whiteBox.removeChild(whiteBox.children[i])
+				// }
+			}
+		}
+
+		if(parseInt(box.style.height) < 400 || box.style.height < 400){
+			if(parseInt(box.style.height) >= 100){
+				box.style.height = parseInt(box.style.height) + 100 + "px"
+			}else{
+				box.style.height = box.style.height + 100 + "px"
+			}
+		}
+
+		clickWhite();
+		clickBlock();
+		setTimeout(timer,moveTime())
+	};
+	//abc = setTimeout(timer,1000-FenShu*2)
+
+	//点击黑块删除
+	function clickBlock(){
+		var block = document.getElementsByClassName("block");
+		var arrblock = document.getElementsByTagName("div");
+		var rightP = document.getElementById("fenshu");
+		var Stop = document.getElementById("stop");
+
+		for(var i=0;i < block.length;i++){
+			(function(i){
+				block[i].onclick=function(){
+					// console.log(i)
+					if(Stop.index == false && Stop.index2 == false){
+						box.removeChild(box.children[i]);
+						FenShu += 1;
+						rightP.innerHTML = FenShu;
+						clickBlock()
+					}
+					event.cancelBubble = true;
+				}
+			})(i);
+		}
+	};
+
+	//点击白块
+	function clickWhite(){
+		var box = document.getElementById("box");
+		var Stop = document.getElementById("stop");	
+
+		box.onclick=function(){
+			if(Stop.index != true && Stop.index2 != true){
+				confirm("踩到白块，游戏结束！分数为：" + FenShu + "分！");
+
+				Stop.index2 = true
+				Stop.index3 = true
+			}
+		}
+	}
+
+	//自动测试
+	function clickBlock2(){
+		var block = document.getElementsByClassName("block");
+		var rightP = document.getElementById("fenshu");
+
+		if(block.length >= 4){
+			box.removeChild(box.children[0]);
+			FenShu += 1;
+			rightP.innerHTML = FenShu;
+		}
+	};
+
+	//块的降落速度
+	function moveTime(){
+		var Time = 1000-FenShu*10;
+
+		if(Time <= 450 && FenShu < 100){
+			Time = 450;
+		}else if(FenShu >= 100 && FenShu < 150){
+			Time = 400;
+		}else if(FenShu >= 150){
+			Time = 350;
+		}
+		
+		return Time;
+	}
+
+	//开始，暂停点击事件
+	window.onload=function(){
+		var KaiShi = document.getElementById("kaishi");	
+		var Stop = document.getElementById("stop");	
+		Stop.index = false;
+
+		KaiShi.onclick=function(){
+			var block = document.getElementsByClassName("block");
+			var rightP = document.getElementById("fenshu");
+			var whiteBox = document.getElementById("white_box");
+			var box = document.getElementById("box");
+
+			if(Stop.index == false || Stop.index2 == true || Stop.index3){
+				while(box.hasChildNodes()){
+					box.removeChild(box.children[0]);
+				};
+				while(whiteBox.hasChildNodes()){
+					whiteBox.removeChild(whiteBox.children[0]);
+				};
+				
+				FenShu = 0;
+				Stop.index2 = false;
+				Stop.index3 = false;
+				box.style.height = "";
+				rightP.innerHTML = FenShu;
+				abc = setTimeout(timer,moveTime());
+			}else{
+				Stop.index = false;
+				abc = setTimeout(timer,moveTime());
+			}
+		}
+
+		Stop.onclick=function(){
+			Stop.index = true;
+		}
+	}
+	
+</script>
+</html>
